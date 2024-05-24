@@ -1,7 +1,15 @@
-# main.tf
+terraform {
+    required_providers {
+        google = {
+            source  = "hashicorp/google"
+            version = "5.30.0"
+        }
+    }
+}
+
 provider "google" {
-    project = "your-project-id"
-    region  = "us-central1"
+    project = "id-me-presentation"
+    region  = "us-east1"
 }
 
 resource "google_sql_database_instance" "hello_world_db" {

@@ -1,4 +1,3 @@
-# app.py (Python/Flask example)
 from flask import Flask
 import psycopg2
 
